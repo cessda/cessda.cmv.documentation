@@ -1,0 +1,49 @@
+# CESSDA Documentation Template
+---
+# If you make changes here, you need to restart Jekyll to apply them
+title: "[CHANGEME] CESSDA Documentation Template"
+baseurl: /
+
+# Theme
+theme: jekyll-cessda-docs
+search_enabled: true
+
+defaults:
+ -
+  scope:
+   path: "**/*.md"
+   type: "pages"
+  values:
+   permalink: /:path/:basename:output_ext
+   layout: "page"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added
+# to the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# Individual pages that are e.g. in draft format can be hidden
+# using 'published: false' in the Front Matter.
+#
+exclude:
+ - .sass-cache/
+ - .jekyll-cache/
+ - Dockerfile
+ - Jenkinsfile
+ - gemfiles/
+ - Gemfile
+ - Gemfile.lock
+ - Rakefile
+ - nginx/
+ - node_modules/
+ - README.md
+ - CONTRIBUTING.md
+ - CHANGELOG.md
+ - vendor/bundle/
+ - vendor/cache/
+ - vendor/gems/
+ - vendor/ruby/
+ - scripts/

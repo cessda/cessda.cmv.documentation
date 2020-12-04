@@ -1,24 +1,33 @@
-# README #
+# CESSDA Documentation Template
 
-List of contents by documentation type.
+This repository is a template repository that can be forked to easily start creating documentation using [CESSDA's
+Just The Docs theme](https://bitbucket.org/cessda/cessda.documentation.theme).
 
-### Developer docs ###
+See <https://docs.tech.cessda.eu/platform/documentation_tooling.html> for detailed documentation on how to use this repository,
+as well as descriptions on what the files in this repository do.
 
-* Source code commented throughout
-* Requirements (functional and non-functional, including wireframes for any UI components)
-* API documentation, extension/developer’s guide
-* Systems architecture (fit with CESSDA RI)
-* Technical specification (implementation details)
-* Test cases and results (de facto recorded by the Continuous Integration and Test process, and are best examined there in order to ensure they are current)
-* Customisation/use guide
+## Technical Implementation
 
+The documentation is written in markdown files and compiled to html using [Jekyll](https://jekyllrb.com)
+with the [CESSDA theme](https://rubygems.org/gems/jekyll-cessda-docs) based on the
+[Just the docs](https://github.com/pmarsceill/just-the-docs) theme.
 
-### End User ###
+To get started locally, make sure to [have Ruby installed](https://jekyllrb.com/docs/installation/), then run
 
-End user documentation may be added prior to release, and is not a prerequisite for delivery. The following types are expected:
+```shell
+gem install jekyll bundler
+bundle install
+bundle exec jekyll serve --config _config.yml,_devsettings.yml
+```
 
-* User guide
-* Tutorials
-* Release notes
+## Development
 
+The documentation is written using Markdown files with Jekyll headers.
+Coding follows the [Google Style Guide for Markdown](https://google.github.io/styleguide/docguide/style.html),
+including ATX style headers and a maximal line lengths of 140 characters.
 
+Style Guide compliance is checked with [markdownlint](https://github.com/markdownlint/markdownlint) by running
+
+```shell
+bundle exec rake lint
+```
