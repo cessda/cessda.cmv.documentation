@@ -1,8 +1,9 @@
 # CESSDA Documentation Template
 ---
 # If you make changes here, you need to restart Jekyll to apply them
-title: "[CHANGEME] CESSDA Documentation Template"
-baseurl: /
+title: "CESSDA Metadata Validator Documentation"
+baseurl: /documentation/
+destination: ./_site/documentation/
 
 # Theme
 theme: jekyll-cessda-docs

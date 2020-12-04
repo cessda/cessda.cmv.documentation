@@ -19,8 +19,8 @@ pipeline {
 	}
 
 	environment {
-		productName // Set this to the name of the product this repository is documenting, i.e. ELSST, CVS, CDC...
-		componentName = 'documentation' // Can be customised if necessary
+		productName = 'cmv'
+		componentName = 'documentation'
 		imageTag = "${docker_repo}/${productName}-${componentName}:${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
 	}
 
@@ -66,7 +66,7 @@ pipeline {
 		stage('Deploy Guidelines') {
 			steps {
 				// Pass the image tag down the pipeline
-				build job: 'cessda.productName.documentation', parameters: [string(name: 'imageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
+				build job: 'cessda.cmv.deploy/master', parameters: [string(name: 'documentationImageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
 			}
 			when { branch 'master' }
 		}
