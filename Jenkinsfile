@@ -66,7 +66,7 @@ pipeline {
 		stage('Deploy Guidelines') {
 			steps {
 				// Pass the image tag down the pipeline
-				build job: 'cessda.cmv.deploy/master', parameters: [string(name: 'documentationImageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")]
+				build job: 'cessda.cmv.deploy/master', parameters: [string(name: 'documentationImageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")], wait: false
 			}
 			when { branch 'master' }
 		}
