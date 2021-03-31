@@ -74,7 +74,7 @@ nav_order: 040
         <titlStmt>
           <titl></titl>
           <!--or <titl>  </titl> -->
-        </titlStmt>      
+        </titlStmt>
       </citation>
     </docDscr>
     ```
