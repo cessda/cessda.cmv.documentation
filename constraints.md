@@ -25,15 +25,15 @@ nav_order: 040
 | [Compilable XPath](constraints.html#compilable-xpath)                                                    |         |            |          |          |         |
 | [Predicate-less XPath](constraints.html#predicate-less-xpath)                                            |         |            |          |          |         |
 
-### Mandatory Node
+## Mandatory Node
 
-#### Definition
+### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is mandatory to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
-#### Representation
+### Representation
 
 * DDI Profile
 
@@ -41,7 +41,7 @@ nav_order: 040
   <pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
   ```
     
-#### Example
+### Example
 
 * Valid, because *titl* element is present and not blank
     
@@ -79,15 +79,15 @@ nav_order: 040
     </docDscr>
     ```
 
-### Recommended Node
+## Recommended Node
 
-#### Definition
+### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is recommended to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
-#### Representation
+### Representation
 
 * DDI Profile
 
@@ -101,7 +101,7 @@ nav_order: 040
     </pr:Used>
     ```
 
-#### Example
+### Example
 
 * Valid, because *AuthEnty* element is present and not blank
 
@@ -137,13 +137,13 @@ nav_order: 040
     </stdyDscr>
     ```
 
-### Fixed Value Node
+## Fixed Value Node
 
-#### Definition
+### Definition
 
 * The metadata document is valid, only if the node value equals to the fixed value defined in the profile, otherwise invalid.
 
-#### Representation
+### Representation
 
 * DDI Profile
 
@@ -153,7 +153,7 @@ nav_order: 040
              fixedValue="true">
     </pr:Used>
     ```
-#### Example
+### Example
 
 * Valid, because *vocab* attribute value equals to "DDI Analysis Unit"
 
@@ -175,15 +175,15 @@ nav_order: 040
     </sumDscr>
     ```
 
-### Optional Node
+## Optional Node
 
-#### Definition
+### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is optional to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
-#### Representation
+### Representation
 
 * DDI Profile
 
@@ -191,7 +191,7 @@ nav_order: 040
     <pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false"/>
     ```
 
-#### Example
+### Example
 
 * Valid, because *AuthEnty* element is present and not blank
 
@@ -214,7 +214,7 @@ nav_order: 040
       </citation>
     </stdyDscr>
     ```
-    
+
 * Invalid, because *AuthEnty* element is blank
 
     ```xml
@@ -228,15 +228,15 @@ nav_order: 040
     </stdyDscr>
     ```
 
-### Mandatory Node if Parent Present
+## Mandatory Node if Parent Present
 
-#### Definition
+### Definition
 
 * A node may only be mandatory if the parent node is present.
 * The metadata document is valid, only if - provided the parent node is present - the node itself is present at least once and is not blank, otherwise invalid.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 
-#### Representation
+### Representation
 
 * DDI Profile
 
@@ -255,7 +255,7 @@ nav_order: 040
     </pr:Used>
     ```
 
-#### Example
+### Example
 
 * Valid, because *agency* element is present and not blank
 
@@ -302,14 +302,14 @@ nav_order: 040
     </stdyDscr>
     ```
 
-### Code Value of Controlled Vocabulary 
+## Code Value of Controlled Vocabulary 
 
-#### Definition
+### Definition
 
 * A field element in a metadata document uses a controlled vocabulary (CV).
 * The metadata document is valid, only if the field element is a codeValue of the given CV, otherwise invalid.
 
-#### Representation
+### Representation
 
 * DDI Profile
 
@@ -345,7 +345,7 @@ nav_order: 040
     </pr:Used>
     ```
 
-#### Example
+### Example
 
 * Valid, because *Individual* is a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is a codeValue of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
 
@@ -359,7 +359,7 @@ nav_order: 040
      </sumDscr>
     </stdyInfo>
     ```
-    
+
 * Invalid, because *Person* is **not** a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
 
     ```xml
@@ -372,14 +372,14 @@ nav_order: 040
     </stdyInfo>
     ```
 
-### Descriptive Term of Controlled Vocabulary
+## Descriptive Term of Controlled Vocabulary
 
-#### Definition
+### Definition
 
 * A field element in a metadata document uses a controlled vocabulary (CV).
 * The metadata document is valid, only if the field element is a descriptive term of the given CV, otherwise invalid.
 
-#### Representation
+### Representation
 
 * DDI Profile
 
@@ -411,7 +411,7 @@ nav_order: 040
     </pr:Used>
     ```
 
-#### Example
+### Example
 
 * Valid, because *Media unit: Sound* is a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
 
@@ -437,7 +437,7 @@ nav_order: 040
     </stdyInfo>
     ```
 
-### Compilable XPath
+## Compilable XPath
 
 An XPath expression must be compilable. This constraint is used only for profile document validation.
 
@@ -451,7 +451,7 @@ An XPath expression must be compilable. This constraint is used only for profile
 /some/not compilable/xpath/because-of-blank
 ```
 
-### Predicate-less XPath
+## Predicate-less XPath
 
 An XPath expression must not contain predicates. This constraint is used only for profile document validation.
 
