@@ -42,6 +42,7 @@ nav_order: 040
   ```
     
 #### Example
+
 * Valid, because *titl* element is present and not blank
     
   ```xml
@@ -105,6 +106,7 @@ nav_order: 040
     ```
 
 #### Example
+
 * Valid, because *AuthEnty* element is present and not blank
 
     ```xml
@@ -156,6 +158,7 @@ nav_order: 040
     </pr:Used>
     ```
 #### Example
+
 * Valid, because *vocab* attribute value equals to "DDI Analysis Unit"
 
     ```xml
@@ -193,6 +196,7 @@ nav_order: 040
     ```
 
 #### Example
+
 * Valid, because *AuthEnty* element is present and not blank
 
     ```xml
@@ -256,6 +260,7 @@ nav_order: 040
     ```
 
 #### Example
+
 * Valid, because *agency* element is present and not blank
 
     ```xml
@@ -345,6 +350,7 @@ nav_order: 040
     ```
 
 #### Example
+
 * Valid, because *Individual* is a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is a codeValue of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
 
     ```xml
@@ -410,6 +416,7 @@ nav_order: 040
     ```
 
 #### Example
+
 * Valid, because *Media unit: Sound* is a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
 
     ```xml
