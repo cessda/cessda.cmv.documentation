@@ -9,7 +9,9 @@ nav_order: 040
 # {{ page.title }}
 
 * Each constraint is described by its semantic definition, xml representation and example usage.
-* Constraints are assigned to pre-defined [validation gates](glossary.html#validation-gate) `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support different levels of validation strictness.
+* Constraints are assigned to pre-defined [validation gates](glossary.html#validation-gate)
+  `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support different levels
+  of validation strictness.
 
 |                                                                                           | Basic     | Basic Plus   | Standard   | Extended   | Strict    |
 |-------------------------------------------------------------------------------------------|:---------:|:------------:|:----------:|:----------:|:---------:|
