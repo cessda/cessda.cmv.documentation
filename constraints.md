@@ -1,14 +1,14 @@
 ---
 title: Constraints
 parent: Home
-has_children: true
+has_children: false
 is_hidden: false
 nav_order: 040
 ---
 
 # {{ page.title }}
 
-* Each constraint is described by its semantic definition, xml representation and example usage. 
+* Each constraint is described by its semantic definition, xml representation and example usage.
 * Constraints are assigned to pre-defined [validation gates](../user-documentation/glossary.html#Validation_Gate) `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support different levels of validation strictness.
 
 |                                                                                           | Basic     | Basic Plus   | Standard   | Extended   | Strict    |
@@ -29,7 +29,7 @@ nav_order: 040
 
 #### Definition
 
-* An XML node (element or attribute) described by a predicate-less XPath expression is mandatory to be used within the metadata document. 
+* An XML node (element or attribute) described by a predicate-less XPath expression is mandatory to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
@@ -60,7 +60,7 @@ nav_order: 040
     <docDscr>
       <citation>
         <titlStmt>
-        </titlStmt>      
+        </titlStmt>
       </citation>
     </docDscr>
     ```
@@ -82,7 +82,7 @@ nav_order: 040
 
 #### Definition
 
-* An XML node (element or attribute) described by a predicate-less XPath expression is recommended to be used within the metadata document. 
+* An XML node (element or attribute) described by a predicate-less XPath expression is recommended to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
@@ -180,7 +180,7 @@ nav_order: 040
 
 #### Definition
 
-* An XML node (element or attribute) described by a predicate-less XPath expression is optional to be used within the metadata document. 
+* An XML node (element or attribute) described by a predicate-less XPath expression is optional to be used within the metadata document.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
@@ -305,7 +305,7 @@ nav_order: 040
 
 #### Definition
 
-* A field element in a metadata document uses a controlled vocabulary (CV). 
+* A field element in a metadata document uses a controlled vocabulary (CV).
 * The metadata document is valid, only if the field element is a codeValue of the given CV, otherwise invalid.
 
 #### Representation
