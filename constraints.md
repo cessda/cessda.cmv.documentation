@@ -235,7 +235,9 @@ nav_order: 040
 ### Definition
 
 * A node may only be mandatory if the parent node is present.
-* The metadata document is valid, only if - provided the parent node is present - the node itself is present at least once and is not blank, otherwise invalid.
+* The metadata document is valid, only if - provided the parent node is
+  present - the node itself is present at least once and is not blank,
+  otherwise invalid.
 * This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
 
 ### Representation
@@ -350,7 +352,10 @@ nav_order: 040
 
 ### Example
 
-* Valid, because *Individual* is a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is a codeValue of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
+* Valid, because *Individual* is a codeValue of
+ [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+ and *TextUnit* is a codeValue of
+ [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
 
     ```xml
     <stdyInfo>
@@ -380,7 +385,8 @@ nav_order: 040
 ### Definition
 
 * A field element in a metadata document uses a controlled vocabulary (CV).
-* The metadata document is valid, only if the field element is a descriptive term of the given CV, otherwise invalid.
+* The metadata document is valid, only if the field element is a
+  descriptive term of the given CV, otherwise invalid.
 
 ### Representation
 

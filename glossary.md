@@ -10,7 +10,9 @@ nav_order: 050
 
 ## Document
 
-* A document is a file containing social science metadata expressed in [DDI Lifecycle](https://ddialliance.org/explore-documentation) or [DDI Codebook](https://ddialliance.org/explore-documentation).
+* A document is a file containing social science metadata expressed
+  in [DDI Lifecycle](https://ddialliance.org/explore-documentation)
+  or [DDI Codebook](https://ddialliance.org/explore-documentation).
 * A document is the subject of validation.
 
 ## Profile
