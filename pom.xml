@@ -68,7 +68,7 @@
 			<resource>
 				<directory>${project.basedir}/_site/documentation/</directory>
 				<filtering>false</filtering>
-				<targetPath>${project.build.outputDirectory}/${project.groupId}/${project.artifactId}</targetPath>
+				<targetPath>${project.build.outputDirectory}/cmv-documentation</targetPath>
 				<includes><include>**/*</include></includes>
 			</resource>
 		</resources>
