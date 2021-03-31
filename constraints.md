@@ -9,21 +9,21 @@ nav_order: 040
 # {{ page.title }}
 
 * Each constraint is described by its semantic definition, xml representation and example usage.
-* Constraints are assigned to pre-defined [validation gates](../user-documentation/glossary.html#Validation_Gate) `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support different levels of validation strictness.
+* Constraints are assigned to pre-defined [validation gates](glossary.html#validation-gate) `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support different levels of validation strictness.
 
 |                                                                                           | Basic     | Basic Plus   | Standard   | Extended   | Strict    |
 |-------------------------------------------------------------------------------------------|:---------:|:------------:|:----------:|:----------:|:---------:|
-| [Mandatory Node](\#Mandatory_Node)                                                        | ![X](images/table-x.png)     | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
-| [Mandatory Node if Parent Present](\#Mandatory_Node_if_Parent_Present)                    | ![X](images/table-x.png)     | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
-| [Code Value of Controlled Vocabulary](\#Code_Value_of_Controlled_Vocabulary)              |         | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
-| [Descriptive Term of Controlled Vocabulary](\#Descriptive_Term_of_Controlled_Vocabulary ) |         | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
-| [Recommended Node](\#Recommended_Node)                                                    |         |            | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
-| [Fixed Value Node](\#Fixed_Value_Node])                                                   |         |            |          | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
-| [Optional Node](\#Optional_Node)                                                          |         |            |          | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
-| [Maximum Node Occurrence](\#Maximum_Node_Occurrence])                                     |         |            |          |          | ![X](images/table-x.png)     |
-| [Node in Profile](\#Node_in_Profile])                                                     |         |            |          |          | ![X](images/table-x.png)     |
-| [Compilable XPath](\#Compilable_XPath)                                                    |         |            |          |          |         |
-| [Predicate-less XPath](\#Predicate-less_XPath)                                            |         |            |          |          |         |
+| [Mandatory Node](constraints.html#mandatory-node)                                                        | ![X](images/table-x.png)     | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
+| [Mandatory Node if Parent Present](constraints.html#mandatory-node-if-parent-present)                    | ![X](images/table-x.png)     | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
+| [Code Value of Controlled Vocabulary](constraints.html#code-value-of-controlled-vocabulary)              |         | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
+| [Descriptive Term of Controlled Vocabulary](constraints.html#descriptive-term-of-controlled-vocabulary ) |         | ![X](images/table-x.png)        | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
+| [Recommended Node](constraints.html#recommended-node)                                                    |         |            | ![X](images/table-x.png)      | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
+| [Fixed Value Node](constraints.html#fixed-value-node)                                                   |         |            |          | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
+| [Optional Node](constraints.html#optional-node)                                                          |         |            |          | ![X](images/table-x.png)      | ![X](images/table-x.png)     |
+| [Maximum Node Occurrence](constraints.html#maximum-node-occurrence)                                     |         |            |          |          | ![X](images/table-x.png)     |
+| [Node in Profile](constraints.html#node-in-profile)                                                     |         |            |          |          | ![X](images/table-x.png)     |
+| [Compilable XPath](constraints.html#compilable-xpath)                                                    |         |            |          |          |         |
+| [Predicate-less XPath](constraints.html#predicate-less-xpath)                                            |         |            |          |          |         |
 
 ### Mandatory Node
 
@@ -95,11 +95,7 @@ nav_order: 040
     <pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false">
       <pr:Instructions>
         <r:Content>
-          <![CDATA[
-            <Constraints>
-              <RecommendedNodeConstraint/>
-            </Constraints>
-          ]]>
+          <![CDATA[<Constraints><RecommendedNodeConstraint/></Constraints>]]>
         </r:Content>
       </pr:Instructions>
     </pr:Used>
