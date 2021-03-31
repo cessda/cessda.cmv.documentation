@@ -40,11 +40,11 @@ nav_order: 040
   ```xml
   <pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
   ```
-    
+
 ### Example
 
 * Valid, because *titl* element is present and not blank
-    
+
   ```xml
   <docDscr>
     <citation>
@@ -56,7 +56,7 @@ nav_order: 040
   ```
 
 * Invalid, because *titl* element is not present
-      
+
     ```xml
     <docDscr>
       <citation>
@@ -124,6 +124,7 @@ nav_order: 040
       </citation>
     </stdyDscr>
     ```
+
 * Invalid, because *AuthEnty* element is blank
 
     ```xml
@@ -153,6 +154,7 @@ nav_order: 040
              fixedValue="true">
     </pr:Used>
     ```
+
 ### Example
 
 * Valid, because *vocab* attribute value equals to "DDI Analysis Unit"
@@ -268,6 +270,7 @@ nav_order: 040
       </citation>
     </stdyDscr>
     ```
+
 * Valid, because *IDNo* parent element is not present
 
     ```xml
@@ -302,7 +305,7 @@ nav_order: 040
     </stdyDscr>
     ```
 
-## Code Value of Controlled Vocabulary 
+## Code Value of Controlled Vocabulary
 
 ### Definition
 
@@ -441,12 +444,12 @@ nav_order: 040
 
 An XPath expression must be compilable. This constraint is used only for profile document validation.
 
-```
+```xml
 # valid
 /some/compilable/xpath
 ```
 
-```
+```xml
 # invalid
 /some/not compilable/xpath/because-of-blank
 ```
@@ -455,12 +458,12 @@ An XPath expression must be compilable. This constraint is used only for profile
 
 An XPath expression must not contain predicates. This constraint is used only for profile document validation.
 
-```
+```xml
 # valid
 /some/xpath/without/precicate
 ```
 
-```
+```xml
 # invalid
 /some/xpath/with/precicate[@version='1.0']
 ```
