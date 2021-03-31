@@ -36,22 +36,26 @@ nav_order: 040
 #### Representation
 
 * DDI Profile
-    ```xml
-    <pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
-    ```
+
+  ```xml
+  <pr:Used xpath="/codeBook/docDscr/citation/titlStmt/titl" isRequired="true"/>
+  ```
+    
 #### Example
 * Valid, because *titl* element is present and not blank
-    ```xml
-    <docDscr>
-      <citation>
-        <titlStmt>
-          <titl>DDI2.5 XML CODEBOOK RECORD FOR STUDY NUMBER 2000</titl>
-        </titlStmt>      
-      </citation>
-    </docDscr>
-    ```
     
+  ```xml
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>DDI2.5 XML CODEBOOK RECORD FOR STUDY NUMBER 2000</titl>
+      </titlStmt>
+    </citation>
+  </docDscr>
+  ```
+
 * Invalid, because *titl* element is not present
+      
     ```xml
     <docDscr>
       <citation>
@@ -60,7 +64,9 @@ nav_order: 040
       </citation>
     </docDscr>
     ```
+
 * Invalid, because *titl* element is blank
+
     ```xml
     <docDscr>
       <citation>
@@ -83,6 +89,7 @@ nav_order: 040
 #### Representation
 
 * DDI Profile
+
     ```xml
     <pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false">
       <pr:Instructions>
@@ -99,6 +106,7 @@ nav_order: 040
 
 #### Example
 * Valid, because *AuthEnty* element is present and not blank
+
     ```xml
     <stdyDscr>
       <citation>
@@ -110,6 +118,7 @@ nav_order: 040
     ```
 
 * Invalid, because *AuthEnty* element is not present
+
     ```xml
     <stdyDscr>
       <citation>
@@ -118,6 +127,7 @@ nav_order: 040
     </stdyDscr>
     ```
 * Invalid, because *AuthEnty* element is blank
+
     ```xml
     <stdyDscr>
       <citation>
@@ -138,6 +148,7 @@ nav_order: 040
 #### Representation
 
 * DDI Profile
+
     ```xml
     <pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept/@vocab"
              defaultValue="DDI Analysis Unit"
@@ -146,6 +157,7 @@ nav_order: 040
     ```
 #### Example
 * Valid, because *vocab* attribute value equals to "DDI Analysis Unit"
+
     ```xml
     <sumDscr>
       <anlyUnit>
@@ -155,6 +167,7 @@ nav_order: 040
     ```
 
 * Invalid, because *vocab* attribute value does not equal to "DDI Analysis Unit"
+
     ```xml
     <sumDscr>
       <anlyUnit>
@@ -174,12 +187,14 @@ nav_order: 040
 #### Representation
 
 * DDI Profile
+
     ```xml
     <pr:Used xpath="/codeBook/stdyDscr/citation/rspStmt/AuthEnty" isRequired="false"/>
     ```
 
 #### Example
 * Valid, because *AuthEnty* element is present and not blank
+
     ```xml
     <stdyDscr>
       <citation>
@@ -191,6 +206,7 @@ nav_order: 040
     ```
 
 * Invalid, because *AuthEnty* element is not present
+
     ```xml
     <stdyDscr>
       <citation>
@@ -198,7 +214,9 @@ nav_order: 040
       </citation>
     </stdyDscr>
     ```
+    
 * Invalid, because *AuthEnty* element is blank
+
     ```xml
     <stdyDscr>
       <citation>
@@ -221,6 +239,7 @@ nav_order: 040
 #### Representation
 
 * DDI Profile
+
     ```xml
     <pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo" isRequired="false"/>
     <pr:Used xpath="/codeBook/stdyDscr/citation/titlStmt/IDNo/@agency" isRequired="false">
@@ -238,6 +257,7 @@ nav_order: 040
 
 #### Example
 * Valid, because *agency* element is present and not blank
+
     ```xml
     <stdyDscr>
       <citation>
@@ -248,6 +268,7 @@ nav_order: 040
     </stdyDscr>
     ```
 * Valid, because *IDNo* parent element is not present
+
     ```xml
     <stdyDscr>
       <citation>
@@ -255,7 +276,9 @@ nav_order: 040
       </citation>
     </stdyDscr>
     ```
+
 * Invalid, because *agency* element is not present
+
     ```xml
     <stdyDscr>
       <citation>
@@ -265,7 +288,9 @@ nav_order: 040
       </citation>
     </stdyDscr>
     ```
+
 * Invalid, because *agency* element is blank
+
     ```xml
     <stdyDscr>
       <citation>
@@ -286,6 +311,7 @@ nav_order: 040
 #### Representation
 
 * DDI Profile
+
     ```xml
     <pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit/concept">
       <pr:Instructions>
@@ -320,6 +346,7 @@ nav_order: 040
 
 #### Example
 * Valid, because *Individual* is a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0) and *TextUnit* is a codeValue of [AnalysisUnit:1.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
+
     ```xml
     <stdyInfo>
      <sumDscr>
@@ -332,6 +359,7 @@ nav_order: 040
     ```
     
 * Invalid, because *Person* is **not** a codeValue of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+
     ```xml
     <stdyInfo>
      <sumDscr>
@@ -352,6 +380,7 @@ nav_order: 040
 #### Representation
 
 * DDI Profile
+
     ```xml
     <pr:Used xpath="/codeBook/stdyDscr/stdyInfo/sumDscr/anlyUnit">
       <pr:Instructions>
@@ -382,6 +411,7 @@ nav_order: 040
 
 #### Example
 * Valid, because *Media unit: Sound* is a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+
     ```xml
     <stdyInfo>
      <sumDscr>
@@ -393,6 +423,7 @@ nav_order: 040
     ```
 
 * Invalid, because *Sound media unit* is **not** a descriptive term of [AnalysisUnit:2.0](https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:2.0)
+
     ```xml
     <stdyInfo>
      <sumDscr>
@@ -430,3 +461,4 @@ An XPath expression must not contain predicates. This constraint is used only fo
 # invalid
 /some/xpath/with/precicate[@version='1.0']
 ```
+
