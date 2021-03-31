@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>eu.cessda.cmv</groupId>
+	<artifactId>cmv-documentation</artifactId>
+	<version>0.3.2-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>8</java.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>pl.project13.maven</groupId>
+				<artifactId>git-commit-id-plugin</artifactId>
+				<version>4.0.2</version>
+				<executions>
+					<execution>
+						<id>get-the-git-infos</id><goals><goal>revision</goal></goals>
+					</execution>
+				</executions>
+				<configuration>
+					<verbose>false</verbose>
+					<failOnNoGitDirectory>false</failOnNoGitDirectory>
+					<dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
+					<generateGitPropertiesFile>true</generateGitPropertiesFile>
+					<generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+				<configuration>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<phase>site</phase>
+						<goals><goal>resources</goal></goals>
+						<configuration>
+							<encoding>UTF-8</encoding>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/_site/documentation/</directory>
+				<filtering>false</filtering>
+				<targetPath>${project.build.outputDirectory}/${project.groupId}/${project.artifactId}</targetPath>
+				<includes><include>**/*</include></includes>
+			</resource>
+		</resources>
+	</build>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<organization>
+		<name>CESSDA ERIC</name>
+		<url>https://www.cessda.eu/</url>
+	</organization>
+	<scm>
+		<url>https://bitbucket.org/cessda/cessda.cmv.documentation/</url>
+	</scm>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>https://jenkins.cessda.eu/</url>
+	</ciManagement>
+	<issueManagement>
+		<url>https://bitbucket.org/cessda/cessda.cvm.documentation/issues</url>
+		<system>Bitbucket</system>
+	</issueManagement>
+
+	<repositories>
+		<repository>
+			<id>cessda-nexus</id>
+			<name>CESSDA Nexus Repository</name>
+			<url>https://nexus.cessda.eu/repository/maven-releases</url>
+		</repository>
+		<repository>
+			<id>cessda-nexus-snapshot</id>
+			<name>CESSDA Nexus Snapshot Repository</name>
+			<url>https://nexus.cessda.eu/repository/maven-snapshots</url>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>cessda-nexus</id>
+			<name>CESSDA Nexus Repository</name>
+			<url>https://nexus.cessda.eu/repository/maven-releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>cessda-nexus-snapshot</id>
+			<name>CESSDA Nexus Snapshot Repository</name>
+			<url>https://nexus.cessda.eu/repository/maven-snapshots</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
