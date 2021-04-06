@@ -49,26 +49,12 @@ pipeline {
 				}
 			}
 		}
-		stage('Build Nginx Container') {
-			steps {
-				sh "docker build -t ${imageTag} -f nginx.Dockerfile ."
+		stage('Deploy Project') {
+			stages {
+				withMaven {
+					sh './mvnw clean deploy'
+				}
 			}
-			when { branch 'master' }
-		}
-		stage('Push Docker Container') {
-			steps {
-				sh "gcloud auth configure-docker"
-				sh "docker push ${imageTag}"
-				sh "gcloud container images add-tag ${imageTag} ${docker_repo}/${productName}-${componentName}:${env.BRANCH_NAME}-latest"
-			}
-			when { branch 'master' }
-		}
-		stage('Deploy Guidelines') {
-			steps {
-				// Pass the image tag down the pipeline
-				build job: 'cessda.cmv.deploy/master', parameters: [string(name: 'documentationImageTag', value: "${env.BRANCH_NAME}-${env.BUILD_NUMBER}")], wait: false
-			}
-			when { branch 'master' }
 		}
 	}
 }
