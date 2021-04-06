@@ -55,6 +55,7 @@ pipeline {
 					sh './mvnw clean deploy'
 				}
 			}
+			when { branch 'master' }
 		}
 	}
 }
