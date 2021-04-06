@@ -32,7 +32,7 @@ nav_order: 040
 ### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is mandatory to be used within the metadata document.
-* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+* This constraint includes [Not Blank Node](constraints.html#not-blank-node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
 ### Representation
@@ -86,7 +86,7 @@ nav_order: 040
 ### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is recommended to be used within the metadata document.
-* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+* This constraint includes [Not Blank Node](constraints.html#not-blank-node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
 ### Representation
@@ -184,7 +184,7 @@ nav_order: 040
 ### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is optional to be used within the metadata document.
-* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+* This constraint includes [Not Blank Node](constraints.html#not-blank-node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
 ### Representation
@@ -240,7 +240,7 @@ nav_order: 040
 * The metadata document is valid, only if - provided the parent node is
   present - the node itself is present at least once and is not blank,
   otherwise invalid.
-* This constraint includes [Not Blank Node](\#Not_Blank_Node) constraint.
+* This constraint includes [Not Blank Node](constraints.html#not-blank-node) constraint.
 
 ### Representation
 
@@ -447,6 +447,12 @@ nav_order: 040
    </sumDscr>
   </stdyInfo>
   ```
+
+## Maximum Node Occurrence
+
+## Node in Profile
+
+## Not Blank Node
 
 ## Compilable XPath
 
