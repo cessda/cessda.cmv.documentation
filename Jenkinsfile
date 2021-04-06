@@ -50,7 +50,7 @@ pipeline {
 			}
 		}
 		stage('Deploy Project') {
-			stages {
+			steps {
 				withMaven {
 					sh './mvnw clean deploy'
 				}
