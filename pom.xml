@@ -13,6 +13,29 @@
 		<java.version>8</java.version>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.gesis.commons</groupId>
+			<artifactId>commons-xml</artifactId>
+			<version>5.6.0</version>
+			<classifier>javadoc</classifier>
+		</dependency>
+		<dependency>
+			<groupId>eu.cessda.cmv</groupId>
+			<artifactId>cmv-core</artifactId>
+			<version>0.3.2-SNAPSHOT</version>
+			<classifier>javadoc</classifier>
+		</dependency>
+		<!--
+		<dependency>
+			<groupId>eu.cessda.cmv</groupId>
+			<artifactId>cmv-server</artifactId>
+			<version>0.3.2-SNAPSHOT</version>
+			<classifier>javadoc</classifier>
+		</dependency>
+		-->
+	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -27,7 +50,7 @@
 			<plugin>
 				<groupId>pl.project13.maven</groupId>
 				<artifactId>git-commit-id-plugin</artifactId>
-				<version>4.0.2</version>
+				<version>4.0.4</version>
 				<executions>
 					<execution>
 						<id>get-the-git-infos</id><goals><goal>revision</goal></goals>
@@ -51,6 +74,23 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.9.0</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.doxia</groupId>
+						<artifactId>doxia-module-markdown</artifactId>
+						<version>1.9.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.1.0</version>
 				<executions>
@@ -71,8 +111,43 @@
 				<targetPath>${project.build.outputDirectory}/cmv-documentation</targetPath>
 				<includes><include>**/*</include></includes>
 			</resource>
+			<resource>
+				<directory>${project.basedir}/target/site/apidocs/</directory>
+				<filtering>false</filtering>
+				<targetPath>${project.build.outputDirectory}/cmv-documentation/api/javadoc</targetPath>
+				<includes><include>**/*</include></includes>
+			</resource>
 		</resources>
 	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.2.0</version>
+				<reportSets>
+					<reportSet>
+						<configuration>
+							<quiet>true</quiet>
+							<charset>UTF-8</charset>
+							<docencoding>UTF-8</docencoding>
+							<source>8</source>
+							<docfilessubdirs>true</docfilessubdirs>
+							<includeDependencySources>true</includeDependencySources>
+							<dependencySourceIncludes>
+								<dependencySourceInclude>org.gesis.commons:*</dependencySourceInclude>
+								<dependencySourceInclude>eu.cessda.cmv:*</dependencySourceInclude>
+							</dependencySourceIncludes>
+						</configuration>
+						<reports>
+							<report>aggregate</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
 
 	<licenses>
 		<license>
