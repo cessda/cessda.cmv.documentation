@@ -52,7 +52,7 @@ pipeline {
 		stage('Deploy Project') {
 			steps {
 				withMaven {
-					sh './mvnw clean deploy'
+					sh './mvnw clean site deploy'
 				}
 			}
 			when { branch 'master' }
