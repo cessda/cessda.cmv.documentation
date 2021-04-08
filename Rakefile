@@ -7,6 +7,11 @@ task :lint do
 end
 
 task :htmlproofer do
-  options = { :only_4xx => true, :allow_hash_href => true }
+  options = {
+   :only_4xx => true,
+   :allow_hash_href => true,
+   :url_ignore => ["cmv.cessda.eu"],
+   :href_ignore => ["api/javadoc/index.html"]
+  }
   HTMLProofer.check_directory("./_site", options).run
 end
