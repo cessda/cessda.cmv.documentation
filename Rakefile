@@ -10,8 +10,11 @@ task :htmlproofer do
   options = {
    :only_4xx => true,
    :allow_hash_href => true,
-   :url_ignore => ["https://cmv.cessda.eu/", "api/javadoc/index.html"],
-   :href_ignore => ["/api/javadoc/index.html"]
+   :url_ignore => [
+     "https://cmv.cessda.eu/",
+     "api/javadoc/index.html",
+     "../api/swagger"
+     ]
   }
   HTMLProofer.check_directory("./_site", options).run
 end
