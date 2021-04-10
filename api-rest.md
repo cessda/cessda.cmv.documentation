@@ -55,5 +55,29 @@ curl -s $HOSTNAME/api/V0/Validation \
 ```
 
 ## Trigger validation with Swagger / [OpenAPI 3.0](https://swagger.io/specification)
-* See [Swagger](../api/swagger)
-* Please have a reported integration problem with Swagger and Spring-Boot in mind: [Swagger does not reuse configured Jackson objectMapper Spring bean](https://bitbucket.org/cessda/cessda.cmv.server/issues/43)
+Please note: There is an integration problem with Swagger and Spring-Boot reported: [Swagger does not reuse configured Jackson objectMapper Spring bean](https://bitbucket.org/cessda/cessda.cmv.server/issues/43)
+
+### Step 1 
+* Browse to [Swagger user interface](../api/swagger){:target="_blank"}
+
+![Step 1](images/user-documentation/swagger-tutorial-01.png)
+
+### Step 2
+* Click on endpoint `POST /api/V0/Validation` (green box)
+* Click on the button `Try it out`
+
+![Step 2](images/user-documentation/swagger-tutorial-02.png)
+
+### Step 3
+* Enter an url for the document, e.g. [DDI Codebook UKDS 2000](https://bitbucket.org/cessda/cessda.cmv.core/raw/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml)
+* Enter an url for the profile, e.g. [CDC Profile v0.31](https://bitbucket.org/cessda/cessda.cmv.core/raw/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml)
+* Select a validation gate
+* Click on button `Execute`
+
+![Step 3](images/user-documentation/swagger-tutorial-03.png)
+
+### Step 4
+* Scroll down and see constraint violation messages in the response body
+* If this list is empty, the document is valid
+
+![Step 4](images/user-documentation/swagger-tutorial-04.png)
