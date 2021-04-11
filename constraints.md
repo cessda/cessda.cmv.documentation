@@ -184,7 +184,7 @@ nav_order: 040
 ### Definition
 
 * An XML node (element or attribute) described by a predicate-less XPath expression is optional to be used within the metadata document.
-* This constraint includes [Not Blank Node](constraints.html#not-blank-node) constraint.
+* This constraint [**does not**](https://bitbucket.org/cessda/cessda.cmv.core/issues/66) include [Not Blank Node](constraints.html#not-blank-node) constraint.
 * The metadata document is valid, only if the element is present at least once and the node is not blank, otherwise invalid.
 
 ### Representation
@@ -197,7 +197,7 @@ nav_order: 040
 
 ### Example
 
-* Valid, because *AuthEnty* element is present and not blank
+* Valid, because *AuthEnty* element is present
 
   ```xml
   <stdyDscr>
@@ -219,7 +219,7 @@ nav_order: 040
   </stdyDscr>
   ```
 
-* Invalid, because *AuthEnty* element is blank
+* Valid although *AuthEnty* element is blank, because [Not Blank Node](constraints.html#not-blank-node) constraint is not included.
 
   ```xml
   <stdyDscr>
