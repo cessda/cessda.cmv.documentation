@@ -42,7 +42,9 @@ exclude:
  - node_modules/
  - README.md
  - CONTRIBUTING.md
+ - CONTRIBUTORS.md
  - CHANGELOG.md
+ - LICENSE.txt
  - vendor/bundle/
  - vendor/cache/
  - vendor/gems/
