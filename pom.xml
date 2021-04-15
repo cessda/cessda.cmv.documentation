@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>eu.cessda.cmv</groupId>
 			<artifactId>cmv-core</artifactId>
-			<version>0.4.1-SNAPSHOT</version>
+			<version>0.4.1</version>
 			<classifier>javadoc</classifier>
 		</dependency>
 	</dependencies>
