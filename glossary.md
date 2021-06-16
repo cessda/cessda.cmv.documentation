@@ -12,7 +12,7 @@ nav_order: 050
 
 * A document is a file containing social science metadata expressed
   as [DDI Lifecycle](https://ddialliance.org/explore-documentation)
-  or [DDI Codebook](https://ddialliance.org/explore-documentation) 
+  or [DDI Codebook](https://ddialliance.org/explore-documentation)
   with or without [OAI-PMH 2.0 GetRecord envelope](http://www.openarchives.org/OAI/2.0/openarchivesprotocol.htm#GetRecord).
 * A document is the subject of validation.
 
