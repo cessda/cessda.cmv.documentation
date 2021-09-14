@@ -12,7 +12,7 @@ nav_order: 030
 
 ### DDI 1.2.2
 
-- [Profile version 1.0.4](https://cmv.cessda.eu/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.xml)
+- [Profile version 1.0.4](https://cmv.cessda.eu/profiles/cdc/ddi-1.2.2/1.0.4/profile.xml)
 - [Profile version 1.0.4 - monolingual](https://cmv.cessda.eu/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.xml)
 
 ### DDI 2.5
