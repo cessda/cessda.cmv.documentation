@@ -10,7 +10,7 @@ nav_order: 060
 
 The CMV API is available in two forms, a HTTP REST API and a JAR API.
 
-* [Swagger](../api/swagger)
+* [Swagger](https://api.tech.cessda.eu/)
 
 To use the Java API, include the dependency and repository definition in your Maven project.
 
