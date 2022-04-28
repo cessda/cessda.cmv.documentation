@@ -61,7 +61,7 @@ Please note: There is an integration problem with Swagger and Spring-Boot report
 
 ### Step 1
 
-* Browse to [Swagger user interface](../api/swagger){:target="_blank"}
+* Browse to [Swagger user interface](https://api.tech.cessda.eu/){:target="_blank"}
 
 ![Step 1](images/user-documentation/swagger-tutorial-01.png)
 
