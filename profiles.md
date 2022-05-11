@@ -14,24 +14,27 @@ nav_order: 030
 
 - [Profile version 1.0.4](https://cmv.cessda.eu/profiles/cdc/ddi-1.2.2/1.0.4/profile.xml)
 - [Profile version 1.0.4 - monolingual](https://cmv.cessda.eu/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.xml)
+- [Download](https://bitbucket.org/cessda/cessda.metadata.profiles/downloads/)
 
 ### DDI 2.5
 
 - [Profile version 1.0.4](https://cmv.cessda.eu/profiles/cdc/ddi-2.5/1.0.4/profile.xml)
 - [Profile version 1.0.4 - monolingual](https://cmv.cessda.eu/profiles/cdc/ddi-2.5/1.0.4/profile-mono.xml)
+- [Download](https://bitbucket.org/cessda/cessda.metadata.profiles/downloads/)
 
 ### DDI 3.2
 
 - [Profile version 0.1.1](https://cmv.cessda.eu/profiles/cdc/ddi-3.2/0.1.1/profile.xml)
+- [Download](https://bitbucket.org/cessda/cessda.metadata.profiles/downloads/)
 
 ## European Question Bank (EQB)
 
 ### DDI 2.5
 
 - [Profile version 0.1.0](https://cmv.cessda.eu/profiles/eqb/ddi-2.5/0.1.0/profile.xml)
+- [Download](https://bitbucket.org/cessda/cessda.metadata.profiles/downloads/)
 
 ### DDI 3.2
 
 - [Profile version 0.1.1](https://cmv.cessda.eu/profiles/eqb/ddi-3.2/0.1.1/profile.xml)
-
-
+- [Download](https://bitbucket.org/cessda/cessda.metadata.profiles/downloads/)
