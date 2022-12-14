@@ -36,4 +36,3 @@ nav_order: 050
 ## Validator
 
 * A validator is called by a validation gate to answer the question if the underlying constraint is satisfied or violated.
-

@@ -33,5 +33,3 @@ nav_order: 030
 ### DDI 3.2
 
 - [Profile version 0.1.1](https://cmv.cessda.eu/profiles/eqb/ddi-3.2/0.1.1/profile.xml)
-
-
