@@ -8,9 +8,10 @@ nav_order: 060
 
 # {{ page.title }}
 
-The CMV API is available in two forms, a HTTP REST API and a JAR API.
+The CMV API is available in two forms, a HTTP REST API and a Java API.
 
-* [Swagger](https://api.tech.cessda.eu/)
+Documentation for the REST API is available at <https://api.tech.cessda.eu/>.
+In the top right-hand corner select CESSDA Metadata Validator from the list of API definitions.
 
 To use the Java API, include the dependency and repository definition in your Maven project.
 
@@ -60,5 +61,7 @@ void validateFiles()
   }
 }
 ```
+
+Note that casts to `ValidationService.V10`, `ValidationReportV0` and `ConstraintViolationV0` are necessary due to the way that the API is typed.
 
 Consult the [JavaDoc](api/javadoc/index.html) for more details.
