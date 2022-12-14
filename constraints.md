@@ -482,4 +482,3 @@ An XPath expression must not contain predicates. This constraint is used only fo
 # invalid
 /some/xpath/with/precicate[@version='1.0']
 ```
-

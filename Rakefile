@@ -10,7 +10,7 @@ task :htmlproofer do
   options = {
    :only_4xx => true,
    :allow_hash_href => true,
-   :url_ignore => [
+   :ignore_urls => [
      "https://cmv.cessda.eu/",
      "api/javadoc/index.html",
      "../api/swagger"
