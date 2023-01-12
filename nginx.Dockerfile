@@ -1,5 +1,5 @@
 # Hosting with Nginx
-FROM nginx:1.16
+FROM nginx:1.23
 
 # Copy configuration and html
 COPY nginx/nginx.conf /etc/nginx/
