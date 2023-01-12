@@ -55,7 +55,7 @@ pipeline {
 					sh './mvnw clean site deploy'
 				}
 			}
-			when { branch 'master' }
+			when { branch 'main' }
 		}
 	}
 }
