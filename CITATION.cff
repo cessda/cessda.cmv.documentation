@@ -1,0 +1,20 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: CESSDA Metadata Validator - Documentation component
+message: N/A
+type: software
+authors:
+  - given-names: Matthew
+    family-names: Morris
+    email: matthew.morris@cessda.eu
+    affiliation: CESSDA ERIC
+  - given-names: Alexander
+    family-names: Mühlbauer
+    email: alexander.muehlbauer@gesis.org
+    affiliation: GESIS
+  - given-names: John
+    family-names: Shepherdson
+    email: john.shepherdson@cessda.eu
+    affiliation: CESSDA
