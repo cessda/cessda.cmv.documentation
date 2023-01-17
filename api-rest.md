@@ -57,7 +57,7 @@ curl -s $HOSTNAME/api/V0/Validation \
 ## Trigger validation with Swagger / [OpenAPI 3.0](https://swagger.io/specification)
 
 Please note: There is an integration problem with Swagger and Spring-Boot reported:
- [Swagger does not reuse configured Jackson objectMapper Spring bean](https://bitbucket.org/cessda/cessda.cmv.server/issues/43)
+ [Swagger does not reuse configured Jackson objectMapper Spring bean](https://github.com/cessda/cessda.cmv.server/issues/43)
 
 ### Step 1
 

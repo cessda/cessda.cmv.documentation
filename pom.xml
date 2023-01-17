@@ -144,15 +144,15 @@
 		<url>https://www.cessda.eu/</url>
 	</organization>
 	<scm>
-		<url>https://bitbucket.org/cessda/cessda.cmv.documentation/</url>
+		<url>https://github.com/cessda/cessda.cmv.documentation/</url>
 	</scm>
 	<ciManagement>
 		<system>Jenkins</system>
 		<url>https://jenkins.cessda.eu/</url>
 	</ciManagement>
 	<issueManagement>
-		<url>https://bitbucket.org/cessda/cessda.cvm.documentation/issues</url>
-		<system>Bitbucket</system>
+		<url>https://github.com/cessda/cessda.cvm.documentation/issues</url>
+		<system>Github</system>
 	</issueManagement>
 
 	<repositories>
