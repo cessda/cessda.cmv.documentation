@@ -27,3 +27,25 @@ Style Guide compliance is checked with [markdownlint](https://github.com/markdow
 ```shell
 bundle exec rake lint
 ```
+
+## Contributing
+
+Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct,
+and the process for submitting pull requests to us.
+
+## Versioning
+
+See [Semantic Versioning](https://semver.org/) for guidance.
+
+## Changes
+
+You can find the list of changes made in each release in the
+[CHANGELOG](CHANGELOG.md) file.
+
+## License
+
+See the [LICENSE](LICENSE.txt) file.
+
+## Citing
+
+See the [CITATION](CITATION.cff) file.
