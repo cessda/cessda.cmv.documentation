@@ -13,6 +13,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 *- Fixed (for any bug fixes)*
 *- Security (in case of vulnerabilities)*
 
+## [1.0.0]
+
+### Added
+
+- Added documentation and examples on how to use the CMV Java API ([#CMV-131](https://github.com/cessda/cessda.cmv/issues/131))
+
+### Changed
+
+- Updated links to the OpenAPI/Swagger documentation ([#20](https://github.com/cessda/cessda.cmv.documentation/issues/20))
+- Updated `cmv-core` to 1.0.0
+
+## [0.4.2] - 2021-10-05
+
+### Added
+
+- Include links to the metadata profiles ([#19](https://github.com/cessda/cessda.cmv.documentation/issues/19))
+
 ## [0.4.1] - 2021-04-15
 
 ### Changed
