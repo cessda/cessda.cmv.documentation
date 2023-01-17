@@ -14,9 +14,9 @@ nav_order: 061
 ### Use resolvable URLs for [document](glossary.html#document) and/or [profile](glossary.html#profile)
 
 ```bash
-HOSTNAME=https://cmv[-dev].cessda.eu
-DOCUMENT_URL=https://bitbucket.org/cessda/cessda.cmv.core/raw/ad7e3ffd847ecb9c35faea329fbc7cfe14bfb7a6/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
-PROFILE_URL=https://bitbucket.org/cessda/cessda.cmv.core/raw/ad7e3ffd847ecb9c35faea329fbc7cfe14bfb7a6/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
+HOSTNAME=https://cmv.cessda.eu
+DOCUMENT_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
+PROFILE_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
 
 # If endpoint is secured with HTTP Basic Auth, add option --user $USERNAME:$PASSWORD
 curl -s $HOSTNAME/api/V0/Validation \
@@ -74,8 +74,8 @@ Please note: There is an integration problem with Swagger and Spring-Boot report
 
 ### Step 3
 
-* Enter an URL for the document, e.g. [DDI Codebook UKDS 2000](https://bitbucket.org/cessda/cessda.cmv.core/raw/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml)
-* Enter an URL for the profile, e.g. [CDC Profile v0.31](https://bitbucket.org/cessda/cessda.cmv.core/raw/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml)
+* Enter an URL for the document, e.g. [DDI Codebook UKDS 2000](https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml)
+* Enter an URL for the profile, e.g. [CDC Profile v0.31](https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml)
 * Select a validation gate
 * Click on button `Execute`
 
