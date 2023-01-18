@@ -12,13 +12,13 @@ nav_order: 030
 
 ### DDI 1.2.2
 
-- Profile version 1.0.4 [XML](/profiles/cdc/ddi-1.2.2/1.0.4/profile.xml)/[HTML](/cdc/ddi-1.2.2/1.0.4/profile.html)
-- Profile version 1.0.4 - monolingual [XML](https://cmv.cessda.eu/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.xml)/[HTML](https://cmv.cessda.eu/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.html)
+- Profile version 1.0.4 [XML](/profiles/cdc/ddi-1.2.2/1.0.4/profile.xml)/[HTML](/profiles/cdc/ddi-1.2.2/1.0.4/profile.html)
+- Profile version 1.0.4 - monolingual [XML](/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.xml)/[HTML](/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.html)
 
 ### DDI 2.5
 
-- Profile version 1.0.4 [XML](https://cmv.cessda.eu/profiles/cdc/ddi-2.5/1.0.4/profile.xml)/[HTML](https://cmv.cessda.eu/profiles/cdc/ddi-2.5/1.0.4/profile.html)
-- Profile version 1.0.4 - monolingual [XML](https://cmv.cessda.eu/profiles/cdc/ddi-2.5/1.0.4/profile-mono.xml)/[HTML](https://cmv.cessda.eu/profiles/cdc/ddi-2.5/1.0.4/profile-mono.html)
+- Profile version 1.0.4 [XML](/profiles/cdc/ddi-2.5/1.0.4/profile.xml)/[HTML](/profiles/cdc/ddi-2.5/1.0.4/profile.html)
+- Profile version 1.0.4 - monolingual [XML](/profiles/cdc/ddi-2.5/1.0.4/profile-mono.xml)/[HTML](/profiles/cdc/ddi-2.5/1.0.4/profile-mono.html)
 
 ### DDI 3.2
 
