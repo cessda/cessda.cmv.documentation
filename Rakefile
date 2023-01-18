@@ -13,7 +13,8 @@ task :htmlproofer do
    :ignore_urls => [
      "https://cmv.cessda.eu/",
      "api/javadoc/index.html",
-     "../api/swagger"
+     "../api/swagger",
+     /\/profiles\/.+/
      ]
   }
   HTMLProofer.check_directory("./_site", options).run
