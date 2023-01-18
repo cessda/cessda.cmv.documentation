@@ -14,7 +14,7 @@ task :htmlproofer do
      "https://cmv.cessda.eu/",
      "api/javadoc/index.html",
      "../api/swagger",
-     "/profiles/.+"
+     /\/profiles\/.+/
      ]
   }
   HTMLProofer.check_directory("./_site", options).run
