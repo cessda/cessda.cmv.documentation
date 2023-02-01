@@ -12,24 +12,24 @@ nav_order: 030
 
 ### DDI 1.2.2
 
-- Profile version 1.0.4 [XML](/profiles/cdc/ddi-1.2.2/1.0.4/profile.xml)/[HTML](/profiles/cdc/ddi-1.2.2/1.0.4/profile.html)
-- Profile version 1.0.4 - monolingual [XML](/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.xml)/[HTML](/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.html)
+- Profile version 1.0.4 <a href="/profiles/cdc/ddi-1.2.2/1.0.4/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/1.0.4/profile.html)
+- Profile version 1.0.4 - monolingual <a href="/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/1.0.4/profile-mono.html)
 
 ### DDI 2.5
 
-- Profile version 1.0.4 [XML](/profiles/cdc/ddi-2.5/1.0.4/profile.xml)/[HTML](/profiles/cdc/ddi-2.5/1.0.4/profile.html)
-- Profile version 1.0.4 - monolingual [XML](/profiles/cdc/ddi-2.5/1.0.4/profile-mono.xml)/[HTML](/profiles/cdc/ddi-2.5/1.0.4/profile-mono.html)
+- Profile version 1.0.4 <a href="/profiles/cdc/ddi-2.5/1.0.4/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/1.0.4/profile.html)
+- Profile version 1.0.4 - monolingual <a href="/profiles/cdc/ddi-2.5/1.0.4/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/1.0.4/profile-mono.html)
 
 ### DDI 3.2
 
-- Profile version 0.1.1 [XML](/profiles/cdc/ddi-3.2/0.1.1/profile.xml)/[HTML](/profiles/cdc/ddi-3.2/0.1.1/profile.html)
+- Profile version 0.1.1 <a href="/profiles/cdc/ddi-3.2/0.1.1/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.2/0.1.1/profile.html)
 
 ## European Question Bank (EQB)
 
 ### DDI 2.5
 
-- Profile version 0.1.0 [XML](/profiles/eqb/ddi-2.5/0.1.0/profile.xml)/[HTML](/profiles/eqb/ddi-2.5/0.1.0/profile.xml)
+- Profile version 0.1.0 <a href="/profiles/eqb/ddi-2.5/0.1.0/profile.xml" download>XML</a>/[HTML](/profiles/eqb/ddi-2.5/0.1.0/profile.xml)
 
 ### DDI 3.2
 
-- Profile version 0.1.1 [XML](/profiles/eqb/ddi-3.2/0.1.1/profile.xml)/[HTML](/profiles/eqb/ddi-3.2/0.1.1/profile.html)
+- Profile version 0.1.1 <a href="/profiles/eqb/ddi-3.2/0.1.1/profile.xml" download>XML</a>/[HTML](/profiles/eqb/ddi-3.2/0.1.1/profile.html)
