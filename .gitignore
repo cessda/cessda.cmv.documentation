@@ -12,3 +12,4 @@ vendor
 rubygems
 /target/
 /.settings/
+.idea
