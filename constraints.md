@@ -12,20 +12,21 @@ nav_order: 040
 * Constraints are assigned to pre-defined [validation gates](glossary.html#validation-gate)
  `Basic`, `Basic Plus`, `Standard`, `Extended` and `Strict` to support different levels
  of validation strictness.
+* The REST API allows a validation to define constraints outside of the pre-set gates.
 
-| | Basic | Basic Plus | Standard | Extended | Strict |
-|--|:---:|:--:|:--:|:--:|:--:|
-| [Mandatory Node](constraints.html#mandatory-node) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) |
-| [Mandatory Node if Parent Present](constraints.html#mandatory-node-if-parent-present) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) |
-| [Code Value of Controlled Vocabulary](constraints.html#code-value-of-controlled-vocabulary) | | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) |
-| [Descriptive Term of Controlled Vocabulary](constraints.html#descriptive-term-of-controlled-vocabulary ) | | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) |
-| [Recommended Node](constraints.html#recommended-node) | | | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) |
-| [Fixed Value Node](constraints.html#fixed-value-node) | | | | ![X](images/table-x.png) | ![X](images/table-x.png) |
-| [Optional Node](constraints.html#optional-node) | | | | ![X](images/table-x.png) | ![X](images/table-x.png) |
-| [Maximum Node Occurrence](constraints.html#maximum-node-occurrence) | | | | | ![X](images/table-x.png) |
-| [Node in Profile](constraints.html#node-in-profile) | | | | | ![X](images/table-x.png) |
-| [Compilable XPath](constraints.html#compilable-xpath) | | | | | |
-| [Predicate-less XPath](constraints.html#predicate-less-xpath) | | | | | |
+| Constraint Name                                                                         |          Basic           |        Basic Plus        |         Standard         |         Extended          |          Strict          |
+|-----------------------------------------------------------------------------------------|:------------------------:|:------------------------:|:------------------------:|:-------------------------:|:------------------------:|
+| [Mandatory Node](#mandatory-node)                                                       | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png)  | ![X](images/table-x.png) |
+| [Mandatory Node if Parent Present](#mandatory-node-if-parent-present)                   | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png)  | ![X](images/table-x.png) |
+| [Code Value of Controlled Vocabulary](#code-value-of-controlled-vocabulary)             |                          | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png)  | ![X](images/table-x.png) |
+| [Descriptive Term of Controlled Vocabulary](#descriptive-term-of-controlled-vocabulary) |                          | ![X](images/table-x.png) | ![X](images/table-x.png) | ![X](images/table-x.png)  | ![X](images/table-x.png) |
+| [Recommended Node](#recommended-node)                                                   |                          |                          | ![X](images/table-x.png) | ![X](images/table-x.png)  | ![X](images/table-x.png) |
+| [Fixed Value Node](#fixed-value-node)                                                   |                          |                          |                          | ![X](images/table-x.png)  | ![X](images/table-x.png) |
+| [Optional Node](#optional-node)                                                         |                          |                          |                          | ![X](images/table-x.png)  | ![X](images/table-x.png) |
+| [Maximum Node Occurrence](#maximum-node-occurrence)                                     |                          |                          |                          |                           | ![X](images/table-x.png) |
+| [Node in Profile](#node-in-profile)                                                     |                          |                          |                          |                           | ![X](images/table-x.png) |
+| [Compilable XPath](#compilable-xpath)                                                   |                          |                          |                          |                           |                          |
+| [Predicate-less XPath](#predicate-less-xpath)                                           |                          |                          |                          |                           |                          |
 
 ## Mandatory Node
 
@@ -33,7 +34,7 @@ nav_order: 040
 
 * An XML node (element or attribute) described by a predicate-less XPath
  expression is mandatory to be used within the metadata document.
-* This constraint includes [Not Blank Node](constraints.html#not-blank-node)
+* This constraint includes [Not Blank Node](#not-blank-node)
  constraint.
 * The metadata document is valid, only if the element is present at least
  once and the node is not blank, otherwise invalid.
@@ -48,7 +49,7 @@ nav_order: 040
 
 ### Example 1
 
-* Valid, because *titl* element is present and not blank
+* Valid, because `titl` element is present and not blank
 
  ```xml
  <docDscr>
@@ -60,7 +61,7 @@ nav_order: 040
  </docDscr>
  ```
 
-* Invalid, because *titl* element is not present
+* Invalid, because `titl` element is not present
 
  ```xml
  <docDscr>
@@ -71,7 +72,7 @@ nav_order: 040
  </docDscr>
  ```
 
-* Invalid, because *titl* element is blank
+* Invalid, because `titl` element is blank
 
  ```xml
  <docDscr>
@@ -90,7 +91,7 @@ nav_order: 040
 
 * An XML node (element or attribute) described by a predicate-less XPath
  expression is recommended to be used within the metadata document.
-* This constraint includes [Not Blank Node](constraints.html#not-blank-node)
+* This constraint includes [Not Blank Node](#not-blank-node)
  constraint.
 * The metadata document is valid, only if the element is present at least
  once and the node is not blank, otherwise invalid.
@@ -111,7 +112,7 @@ nav_order: 040
 
 ### Example 2
 
-* Valid, because *AuthEnty* element is present and not blank
+* Valid, because `AuthEnty` element is present and not blank
 
  ```xml
  <stdyDscr>
@@ -123,7 +124,7 @@ nav_order: 040
  </stdyDscr>
  ```
 
-* Invalid, because *AuthEnty* element is not present
+* Invalid, because `AuthEnty` element is not present
 
  ```xml
  <stdyDscr>
@@ -133,7 +134,7 @@ nav_order: 040
  </stdyDscr>
  ```
 
-* Invalid, because *AuthEnty* element is blank
+* Invalid, because `AuthEnty` element is blank
 
  ```xml
  <stdyDscr>
@@ -192,7 +193,7 @@ nav_order: 040
 * An XML node (element or attribute) described by a predicate-less XPath
  expression is optional to be used within the metadata document.
 * This constraint [**does not**](https://github.com/cessda/cessda.cmv.core/issues/66)
- include [Not Blank Node](constraints.html#not-blank-node) constraint.
+ include [Not Blank Node](#not-blank-node) constraint.
 * The metadata document is valid, only if the element is present at least
  once and the node is not blank, otherwise invalid.
 
@@ -206,7 +207,7 @@ nav_order: 040
 
 ### Example 4
 
-* Valid, because *AuthEnty* element is present
+* Valid, because `AuthEnty` element is present
 
  ```xml
  <stdyDscr>
@@ -218,7 +219,7 @@ nav_order: 040
  </stdyDscr>
  ```
 
-* Invalid, because *AuthEnty* element is not present
+* Invalid, because `AuthEnty` element is not present
 
  ```xml
  <stdyDscr>
@@ -228,8 +229,8 @@ nav_order: 040
  </stdyDscr>
  ```
 
-* Valid although *AuthEnty* element is blank, because
- [Not Blank Node](constraints.html#not-blank-node) constraint is not included.
+* Valid although `AuthEnty` element is blank, because
+ [Not Blank Node](#not-blank-node) constraint is not included.
 
  ```xml
  <stdyDscr>
@@ -250,7 +251,7 @@ nav_order: 040
 * The metadata document is valid, only if - provided the parent node is
  present - the node itself is present at least once and is not blank,
  otherwise invalid.
-* This constraint includes [Not Blank Node](constraints.html#not-blank-node)
+* This constraint includes [Not Blank Node](#not-blank-node)
  constraint.
 
 ### Representation 5
@@ -274,7 +275,7 @@ nav_order: 040
 
 ### Example 5
 
-* Valid, because *agency* element is present and not blank
+* Valid, because `agency` element is present and not blank
 
  ```xml
  <stdyDscr>
@@ -286,7 +287,7 @@ nav_order: 040
  </stdyDscr>
  ```
 
-* Valid, because *IDNo* parent element is not present
+* Valid, because `IDNo` parent element is not present
 
  ```xml
  <stdyDscr>
@@ -296,7 +297,7 @@ nav_order: 040
  </stdyDscr>
  ```
 
-* Invalid, because *agency* element is not present
+* Invalid, because `agency` attribute is not present
 
  ```xml
  <stdyDscr>
@@ -308,7 +309,7 @@ nav_order: 040
  </stdyDscr>
  ```
 
-* Invalid, because *agency* element is blank
+* Invalid, because `agency` attribute is blank
 
  ```xml
  <stdyDscr>

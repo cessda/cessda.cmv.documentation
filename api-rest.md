@@ -11,9 +11,9 @@ nav_order: 061
 
 ## Trigger validation with [curl](https://curl.se/)
 
-### Use resolvable URLs for [document](glossary.html#document) and/or [profile](glossary.html#profile)
+This example uses an example [document](glossary.html#document) and [profile](glossary.html#profile) hosted on the CMV GitHub repository.
 
-```bash
+```sh
 HOSTNAME=https://cmv.cessda.eu
 DOCUMENT_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
 PROFILE_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
@@ -34,9 +34,10 @@ curl -s $HOSTNAME/api/V0/Validation \
 }'
 ```
 
-### Use JSON-escaped XML-content of document and/or profile
+The API can also accept XML that has been embedded in the JSON request.
+The XML must be properly escaped by a tool like `jq` in order for the content to be preserved.
 
-```bash
+```sh
 DOCUMENT_CONTENT=`curl -s $DOCUMENT_URL | jq -Rs .` # Escaping XML to JSON is still not correct!
 
 curl -s $HOSTNAME/api/V0/Validation \
@@ -54,6 +55,29 @@ curl -s $HOSTNAME/api/V0/Validation \
 }'
 ```
 
+The API can also take a list of constraints to validate against, rather than a pre-set validation gate.
+
+```sh
+HOSTNAME=https://cmv.cessda.eu
+DOCUMENT_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
+PROFILE_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
+
+# If endpoint is secured with HTTP Basic Auth, add option --user $USERNAME:$PASSWORD
+curl -s $HOSTNAME/api/V0/Validation \
+  --request 'POST' \
+  --header 'accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "document": {
+    "uri": "'"$DOCUMENT_URL"'"
+  },
+  "profile": {
+    "uri": "'"$PROFILE_URL"'"
+  },
+  "constraints": ["MandatoryNodeConstraint", "ControlledVocabularyRepositoryConstraint", "CompilableXPathConstraint"]
+}'
+```
+
 ## Trigger validation with Swagger / [OpenAPI 3.0](https://swagger.io/specification)
 
 Please note: There is an integration problem with Swagger and Spring-Boot reported:
@@ -61,7 +85,7 @@ Please note: There is an integration problem with Swagger and Spring-Boot report
 
 ### Step 1
 
-* Browse to [Swagger user interface](https://api.tech.cessda.eu/){:target="_blank"}
+* Browse to the <a href="https://api.tech.cessda.eu/" target="_blank">Swagger API documentation user interface</a>
 
 ![Step 1](images/user-documentation/swagger-tutorial-01.png)
 
