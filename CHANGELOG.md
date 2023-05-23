@@ -14,6 +14,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - *Fixed (for any bug fixes)*
 - *Security (in case of vulnerabilities)*
 
+## [1.1.0]
+
+### Changed
+
+- Force the XML metadata profiles to be downloaded by web browsers
+
 ## [1.0.0]
 
 ### Added
@@ -44,6 +50,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Moved cmv docs from [cessda.cmv](https://github.com/cessda/cessda.cmv)
   to [cessda.cmv.documentation](https://github.com/cessda/cessda.cmv.documentation)
 
+[1.1.0]: https://github.com/cessda/cessda.cmv.documentation/releases/tag/1.1.0
 [1.0.0]: https://github.com/cessda/cessda.cmv.documentation/releases/tag/v1.0.0
 [0.4.1]: https://github.com/cessda/cessda.cmv.documentation/releases/tag/v0.4.1
 [0.4.0]: https://github.com/cessda/cessda.cmv.documentation/releases/tag/v0.4.0
