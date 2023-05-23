@@ -19,7 +19,7 @@ To use the Java API, include the dependency and repository definition in your Ma
 <dependency>
   <groupId>eu.cessda.cmv</groupId>
   <artifactId>cmv</artifactId>
-  <version>0.4.2</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
