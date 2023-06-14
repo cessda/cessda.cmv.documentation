@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.cessda.cmv</groupId>
 	<artifactId>cmv-documentation</artifactId>
-	<version>1.1.1</version>
+	<version>1.1.2-SNAPSHOT</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>8</java.version>
@@ -13,7 +13,7 @@
 		<dependency>
 			<groupId>eu.cessda.cmv</groupId>
 			<artifactId>cmv-core</artifactId>
-			<version>1.1.0</version>
+			<version>1.1.1-SNAPSHOT</version>
 			<classifier>javadoc</classifier>
 		</dependency>
 	</dependencies>
@@ -152,7 +152,7 @@
 	<scm>
 		<url>https://github.com/cessda/cessda.cmv.documentation</url>
 		<developerConnection>scm:git:https://github.com/cessda/cessda.cmv.documentation.git</developerConnection>
-	  <tag>1.1.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<ciManagement>
 		<system>Jenkins</system>
