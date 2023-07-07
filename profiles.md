@@ -28,7 +28,7 @@ nav_order: 030
 
 ### DDI 2.5
 
-- Profile version 0.1.0 <a href="/profiles/eqb/ddi-2.5/0.1.0/profile.xml" download>XML</a>/[HTML](/profiles/eqb/ddi-2.5/0.1.0/profile.xml)
+- Profile version 0.1.0 <a href="/profiles/eqb/ddi-2.5/0.1.0/profile.xml" download>XML</a>/[HTML](/profiles/eqb/ddi-2.5/0.1.0/profile.html)
 
 ### DDI 3.2
 
