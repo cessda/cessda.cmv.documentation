@@ -15,7 +15,7 @@
 pipeline {
 
 	options {
-		buildDiscarder logRotator(numToKeepStr: '20', artifactNumToKeepStr: '5')
+		disableConcurrentBuilds abortPrevious: true
 	}
 
 	environment {
