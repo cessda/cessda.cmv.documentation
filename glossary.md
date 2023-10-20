@@ -18,19 +18,19 @@ nav_order: 050
 
 ## Profile
 
-* A profile holds a set of [constraints](glossary.html#constraint).
+* A profile holds a set of [constraints](#constraint).
 * A profile is itself a document.
 
 ## Constraint
 
-* A constraint is a requirement a [document](glossary.html#document) satisfies or violates.
+* A constraint is a requirement a [document](#document) satisfies or violates.
 * A constraint is expressed as XPath location path together with needed properties.
-* Within the context of a [document](glossary.html#document), a [constraint](glossary.html#constraint) builds [validators](glossary.html#validator).
+* Within the context of a [document](#document), a [constraint](#constraint) builds [validators](#validator).
 
 ## Validation Gate
 
 * A validation gate holds a set of constraint types and serves as validation executor.
-* A [constraint](glossary.html#constraint) is ignored if its constraint type is not part of the validation gate.
+* A [constraint](#constraint) is ignored if its constraint type is not part of the validation gate.
 * CMV defines four, hierarchically structured validation gates: Basic, Standard, Extended and Strict.
 
 ## Validator
