@@ -18,8 +18,8 @@ To use the Java API, include the dependency and repository definition in your Ma
 ```xml
 <dependency>
   <groupId>eu.cessda.cmv</groupId>
-  <artifactId>cmv</artifactId>
-  <version>1.1.0</version>
+  <artifactId>cmv-core</artifactId>
+  <version>2.0.0</version>
 </dependency>
 ```
 
@@ -36,11 +36,11 @@ To use the Java API, include the dependency and repository definition in your Ma
 An example usage of the API is shown below.
 
 ```java
-void validateFiles()
+boolean validateFiles() throws IOException, NotDocumentException
 {
   // Create the validator factory and the validation service
   CessdaMetadataValidatorFactory factory = new CessdaMetadataValidatorFactory();
-  ValidationService.V10 validationService = factory.newValidationService();
+  ValidationService validationService = factory.newValidationService();
 
   // Load the validation profile; this can be a file, URI or a InputStream
   Resource profile = Resource.newResource(new File("path/to/cmv-profile.xml"));
@@ -49,19 +49,20 @@ void validateFiles()
   Resource documentToValidate = Resource.newResource(new File("path/to/ddi-document-to-validate.xml"));
 
   // Run the validation.
-  ValidationReportV0 validationReport = validationService.validate(documentToValidate, profile, ValidationGateName.BASIC);
+  ValidationReport validationReport = validationService.validate(documentToValidate, profile, ValidationGateName.BASIC);
 
   // The validation report can now be inspected. A document is valid if no constraint violations are present.
-  List<ConstraintViolationV0> constraintViolations = validationReport.getConstraintViolations();
+  List<ConstraintViolation> constraintViolations = validationReport.getConstraintViolations();
   boolean isValid = constraintViolations.isEmpty();
 
   // Constraint violations can be detailed if present.
-  for (ConstraintViolationV0 violation : constraintViolations) {
+  for (ConstraintViolation violation : constraintViolations) {
     System.out.println(violation.getMessage());
   }
+
+  // Return the validation status
+  return isValid;
 }
 ```
-
-Note that casts to `ValidationService.V10`, `ValidationReportV0` and `ConstraintViolationV0` are necessary due to the way that the API is typed.
 
 Consult the [JavaDoc](api/javadoc/index.html) for more details.
