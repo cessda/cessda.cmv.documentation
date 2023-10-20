@@ -51,20 +51,29 @@ pipeline {
 			}
 		}
 		stage('Generate Site') {
-			docker {
-				image 'openjdk:8'
-				reuseNode true
+			agent {
+				docker {
+					image 'openjdk:8'
+					reuseNode true
+				}
 			}
 			steps {
 				withMaven {
 					sh './mvnw clean site'
 				}
 			}
+			post {
+				always {
+					recordIssues tools: [javaDoc(), mavenConsole()]
+				}
+			}
 		}
 		stage('Deploy Project') {
-			docker {
-				image 'openjdk:8'
-				reuseNode true
+			agent {
+				docker {
+					image 'openjdk:8'
+					reuseNode true
+				}
 			}
 			steps {
 				withMaven {
