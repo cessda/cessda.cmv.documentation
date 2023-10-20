@@ -50,10 +50,25 @@ pipeline {
 				sh "bundle exec rake htmlproofer"
 			}
 		}
-		stage('Deploy Project') {
+		stage('Generate Site') {
+			docker {
+				image 'openjdk:8'
+				reuseNode true
+			}
 			steps {
 				withMaven {
-					sh './mvnw clean site deploy'
+					sh './mvnw clean site'
+				}
+			}
+		}
+		stage('Deploy Project') {
+			docker {
+				image 'openjdk:8'
+				reuseNode true
+			}
+			steps {
+				withMaven {
+					sh './mvnw deploy'
 				}
 			}
 			when { branch 'main' }

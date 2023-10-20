@@ -129,6 +129,14 @@
 								<dependencySourceInclude>org.gesis.commons:*</dependencySourceInclude>
 								<dependencySourceInclude>eu.cessda.cmv:*</dependencySourceInclude>
 							</dependencySourceIncludes>
+							<!-- Allow use of @implNote on Java 8 -->
+							<tags>
+								<tag>
+									<name>implNote</name>
+									<placement>m</placement>
+									<head>Implementation Note:</head>
+								</tag>
+							</tags>
 						</configuration>
 						<reports>
 							<report>aggregate</report>
