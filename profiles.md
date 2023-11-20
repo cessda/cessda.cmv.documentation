@@ -20,9 +20,18 @@ nav_order: 030
 - Profile version 2.0.0 <a href="/profiles/cdc/ddi-2.5/2.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/2.0.0/profile.html)
 - Profile version 2.0.0 - monolingual <a href="/profiles/cdc/ddi-2.5/2.0.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/2.0.0/profile-mono.html)
 
+### DDI 2.6
+
+- Profile version 1.0.0 <a href="/profiles/cdc/ddi-2.6/1.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.6/1.0.0/profile.html)
+- Profile version 1.0.0 - monolingual <a href="/profiles/cdc/ddi-2.6/1.0.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.6/1.0.0/profile-mono.html)
+
 ### DDI 3.2
 
 - Profile version 1.0.0 <a href="/profiles/cdc/ddi-3.2/1.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.2/1.0.0/profile.html)
+
+### DDI 3.3
+
+- Profile version 1.0.0 <a href="/profiles/cdc/ddi-3.3/1.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.3/1.0.0/profile.html)
 
 ## European Question Bank (EQB)
 
