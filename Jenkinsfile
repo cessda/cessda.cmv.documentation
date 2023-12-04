@@ -80,7 +80,12 @@ pipeline {
 					sh './mvnw deploy'
 				}
 			}
-			when { branch 'main' }
+			when {
+				anyOf {
+					branch 'main'
+					buildingTag()
+				}
+			}
 		}
 	}
 }
