@@ -19,7 +19,7 @@ To use the Java API, include the dependency and repository definition in your Ma
 <dependency>
   <groupId>eu.cessda.cmv</groupId>
   <artifactId>cmv-core</artifactId>
-  <version>2.0.0</version>
+  <version>3.0.0</version>
 </dependency>
 ```
 
@@ -40,16 +40,15 @@ boolean validateFiles() throws IOException, NotDocumentException
 {
   // Create the validator factory and the validation service
   CessdaMetadataValidatorFactory factory = new CessdaMetadataValidatorFactory();
-  ValidationService validationService = factory.newValidationService();
 
   // Load the validation profile; this can be a file, URI or a InputStream
-  Resource profile = Resource.newResource(new File("path/to/cmv-profile.xml"));
+  Profile profile = factory.newProfile(new File("path/to/cmv-profile.xml"));
 
   // Load the document to validate
-  Resource documentToValidate = Resource.newResource(new File("path/to/ddi-document-to-validate.xml"));
+  Document documentToValidate = factory.newDocument(new File("path/to/ddi-document-to-validate.xml"));
 
   // Run the validation.
-  ValidationReport validationReport = validationService.validate(documentToValidate, profile, ValidationGateName.BASIC);
+  ValidationReport validationReport = factory.validate(documentToValidate, profile, ValidationGateName.BASIC);
 
   // The validation report can now be inspected. A document is valid if no constraint violations are present.
   List<ConstraintViolation> constraintViolations = validationReport.getConstraintViolations();
@@ -57,7 +56,7 @@ boolean validateFiles() throws IOException, NotDocumentException
 
   // Constraint violations can be detailed if present.
   for (ConstraintViolation violation : constraintViolations) {
-    System.out.println(violation.getMessage());
+    System.out.println(violation.toString());
   }
 
   // Return the validation status

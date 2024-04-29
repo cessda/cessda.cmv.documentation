@@ -471,8 +471,7 @@ nav_order: 040
 
 ## Compilable XPath
 
-An XPath expression must be compilable. This constraint is used
-only for profile document validation.
+An XPath expression must be compliable. This constraint is only used for profile document validation.
 
 ```xml
 # valid
