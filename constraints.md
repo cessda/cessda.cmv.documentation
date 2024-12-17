@@ -349,16 +349,16 @@ nav_order: 040
  <pr:Instructions>
  <r:Content>
  <![CDATA[
- <Constraints>
- <ControlledVocabularyRepositoryConstraint>
- <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/2.0</RepositoryUri>
- <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
- </ControlledVocabularyRepositoryConstraint>
- <ControlledVocabularyRepositoryConstraint>
- <RepositoryUri>https://vocabularies.cessda.eu/v1/vocabulary-details/AnalysisUnit/en/1.0</RepositoryUri>
- <RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepository</RepositoryType>
- </ControlledVocabularyRepositoryConstraint>
- </Constraints>
+<Constraints>
+<ControlledVocabularyRepositoryConstraint>
+<RepositoryUri>https://vocabularies.cessda.eu/v2/vocabularies/AnalysisUnit/2.0?languageVersion=en-2.0</RepositoryUri>
+<RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepositoryV2</RepositoryType>
+</ControlledVocabularyRepositoryConstraint>
+<ControlledVocabularyRepositoryConstraint>
+<RepositoryUri>https://vocabularies.cessda.eu/v2/vocabularies/AnalysisUnit/1.0?languageVersion=en-1.0</RepositoryUri>
+<RepositoryType>eu.cessda.cmv.core.controlledvocabulary.CessdaControlledVocabularyRepositoryV2</RepositoryType>
+</ControlledVocabularyRepositoryConstraint>
+</Constraints>
  ]]>
  </r:Content>
  </pr:Instructions>
