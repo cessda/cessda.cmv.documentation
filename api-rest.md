@@ -15,8 +15,8 @@ This example uses an example [document](glossary.html#document) and [profile](gl
 
 ```sh
 HOSTNAME=https://cmv.cessda.eu
-DOCUMENT_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
-PROFILE_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
+DOCUMENT_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/refs/tags/4.0.0/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
+PROFILE_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/refs/tags/4.0.0/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
 
 # If endpoint is secured with HTTP Basic Auth, add option --user $USERNAME:$PASSWORD
 curl -s $HOSTNAME/api/V0/Validation \
@@ -59,8 +59,8 @@ The API can also take a list of constraints to validate against, rather than a p
 
 ```sh
 HOSTNAME=https://cmv.cessda.eu
-DOCUMENT_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
-PROFILE_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
+DOCUMENT_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/refs/tags/4.0.0/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml
+PROFILE_URL=https://raw.githubusercontent.com/cessda/cessda.cmv.core/refs/tags/4.0.0/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml
 
 # If endpoint is secured with HTTP Basic Auth, add option --user $USERNAME:$PASSWORD
 curl -s $HOSTNAME/api/V0/Validation \
@@ -98,8 +98,8 @@ Please note: There is an integration problem with Swagger and Spring-Boot report
 
 ### Step 3
 
-* Enter an URL for the document, e.g. [DDI Codebook UKDS 2000](https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml)
-* Enter an URL for the profile, e.g. [CDC Profile v0.31](https://raw.githubusercontent.com/cessda/cessda.cmv.core/8d0ea9d6a731fa06bde8c8f2b231c2e974aa7130/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml)
+* Enter an URL for the document, e.g. [DDI Codebook UKDS 2000](https://raw.githubusercontent.com/cessda/cessda.cmv.core/refs/tags/4.0.0/src/main/resources/demo-documents/ddi-v25/ukds-2000.xml)
+* Enter an URL for the profile, e.g. [CDC Profile v0.31](https://raw.githubusercontent.com/cessda/cessda.cmv.core/refs/tags/4.0.0/src/main/resources/demo-documents/ddi-v25/cdc25_profile.xml)
 * Select a validation gate
 * Click on button `Execute`
 
