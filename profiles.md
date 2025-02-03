@@ -29,11 +29,11 @@ This page lists the latest versions of the profiles, as well as download links i
 
 ### DDI 3.2
 
-- Profile version 2.0.0 <a href="/profiles/cdc/ddi-3.2/2.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.2/2.0.0/profile.html)
+- Profile version 2.0.1 <a href="/profiles/cdc/ddi-3.2/2.0.1/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.2/2.0.1/profile.html)
 
 ### DDI 3.3
 
-- Profile version 2.0.0 <a href="/profiles/cdc/ddi-3.3/2.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.3/2.0.0/profile.html)
+- Profile version 2.0.1 <a href="/profiles/cdc/ddi-3.3/2.0.1/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.3/2.0.1/profile.html)
 
 ## European Question Bank (EQB)
 
