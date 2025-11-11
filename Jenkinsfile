@@ -53,7 +53,7 @@ pipeline {
 		stage('Generate Site') {
 			agent {
 				docker {
-					image 'openjdk:8'
+					image 'eclipse-temurin:8'
 					reuseNode true
 				}
 			}
@@ -71,7 +71,7 @@ pipeline {
 		stage('Deploy Project') {
 			agent {
 				docker {
-					image 'openjdk:8'
+					image 'eclipse-temurin:8'
 					reuseNode true
 				}
 			}
