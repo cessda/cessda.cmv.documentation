@@ -14,26 +14,26 @@ This page lists the latest versions of the profiles, as well as download links i
 
 ### DDI 1.2.2
 
-- Profile version 3.0.0 <a href="/profiles/cdc/ddi-1.2.2/3.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.0.0/profile.html)
-- Profile version 3.0.0 - monolingual <a href="/profiles/cdc/ddi-1.2.2/3.0.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.0.0/profile-mono.html)
+- Profile version 3.1.0 <a href="/profiles/cdc/ddi-1.2.2/3.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.0.0/profile.html)
+- Profile version 3.1.0 - monolingual <a href="/profiles/cdc/ddi-1.2.2/3.0.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.0.0/profile-mono.html)
 
 ### DDI 2.5
 
-- Profile version 3.0.0 <a href="/profiles/cdc/ddi-2.5/3.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.0.0/profile.html)
-- Profile version 3.0.0 - monolingual <a href="/profiles/cdc/ddi-2.5/3.0.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.0.0/profile-mono.html)
+- Profile version 3.1.0 <a href="/profiles/cdc/ddi-2.5/3.1.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.0.0/profile.html)
+- Profile version 3.1.0 - monolingual <a href="/profiles/cdc/ddi-2.5/3.1.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.0.0/profile-mono.html)
 
 ### DDI 2.6
 
-- Profile version 2.0.0 <a href="/profiles/cdc/ddi-2.6/2.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.6/2.0.0/profile.html)
-- Profile version 2.0.0 - monolingual <a href="/profiles/cdc/ddi-2.6/2.0.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.6/2.0.0/profile-mono.html)
+- Profile version 2.1.0 <a href="/profiles/cdc/ddi-2.6/2.1.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.6/2.1.0/profile.html)
+- Profile version 2.1.0 - monolingual <a href="/profiles/cdc/ddi-2.6/2.1.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.6/2.1.0/profile-mono.html)
 
 ### DDI 3.2
 
-- Profile version 2.0.1 <a href="/profiles/cdc/ddi-3.2/2.0.1/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.2/2.0.1/profile.html)
+- Profile version 3.0.0 <a href="/profiles/cdc/ddi-3.2/3.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.2/3.0.0/profile.html)
 
 ### DDI 3.3
 
-- Profile version 2.0.1 <a href="/profiles/cdc/ddi-3.3/2.0.1/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.3/2.0.1/profile.html)
+- Profile version 3.0.0 <a href="/profiles/cdc/ddi-3.3/3.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-3.3/3.0.0/profile.html)
 
 ## European Question Bank (EQB)
 
