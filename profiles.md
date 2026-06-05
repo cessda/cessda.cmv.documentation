@@ -14,13 +14,13 @@ This page lists the latest versions of the profiles, as well as download links i
 
 ### DDI 1.2.2
 
-- Profile version 3.1.0 <a href="/profiles/cdc/ddi-1.2.2/3.0.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.0.0/profile.html)
-- Profile version 3.1.0 - monolingual <a href="/profiles/cdc/ddi-1.2.2/3.0.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.0.0/profile-mono.html)
+- Profile version 3.1.0 <a href="/profiles/cdc/ddi-1.2.2/3.1.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.1.0/profile.html)
+- Profile version 3.1.0 - monolingual <a href="/profiles/cdc/ddi-1.2.2/3.1.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-1.2.2/3.1.0/profile-mono.html)
 
 ### DDI 2.5
 
-- Profile version 3.1.0 <a href="/profiles/cdc/ddi-2.5/3.1.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.0.0/profile.html)
-- Profile version 3.1.0 - monolingual <a href="/profiles/cdc/ddi-2.5/3.1.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.0.0/profile-mono.html)
+- Profile version 3.1.0 <a href="/profiles/cdc/ddi-2.5/3.1.0/profile.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.1.0/profile.html)
+- Profile version 3.1.0 - monolingual <a href="/profiles/cdc/ddi-2.5/3.1.0/profile-mono.xml" download>XML</a>/[HTML](/profiles/cdc/ddi-2.5/3.1.0/profile-mono.html)
 
 ### DDI 2.6
 
