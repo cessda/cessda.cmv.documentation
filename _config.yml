@@ -4,6 +4,8 @@
 title: "CESSDA Metadata Validator Documentation"
 baseurl: /documentation/
 destination: ./_site/documentation/
+matomo_host: 'https://analytics.cessda.eu/'
+matomo_siteid: '8'
 
 # Theme
 theme: jekyll-cessda-docs
